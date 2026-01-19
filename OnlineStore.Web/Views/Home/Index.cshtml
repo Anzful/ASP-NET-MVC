@@ -1,0 +1,44 @@
+﻿@model IEnumerable<OnlineStore.Shared.ProductDto>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section -->
+<div class="hero-section text-center position-relative mb-5">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-3">Welcome to Flash Store</h1>
+        <p class="lead text-muted mb-4 fs-4">Discover the latest tech gadgets with premium quality.</p>
+        <a href="#products" class="btn btn-primary btn-lg px-5 py-3 shadow-lg rounded-pill">Shop Now</a>
+    </div>
+</div>
+
+<div class="container mb-5" id="products">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Latest Arrivals</h2>
+        <span class="text-muted">@Model.Count() products found</span>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 my-3">
+        @foreach (var product in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div style="height: 250px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: white;">
+                         <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" style="max-height: 100%; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-truncate" title="@product.Name">@product.Name</h5>
+                        <p class="card-text text-muted small flex-grow-1" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            @product.Description
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0 fw-bold">@product.Price.ToString("C")</span>
+                            <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id" class="btn btn-outline-dark btn-sm rounded-pill px-3">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

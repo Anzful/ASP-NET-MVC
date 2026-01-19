@@ -1,0 +1,73 @@
+@model IEnumerable<OnlineStore.Shared.CartItemDto>
+
+@{
+    ViewData["Title"] = "Your Cart";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Shopping Cart</h1>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info py-5 text-center">
+            <h3>Your cart is empty.</h3>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">Go Shopping</a>
+        </div>
+    }
+    else
+    {
+        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                    <thead class="bg-light text-uppercase small fw-bold letter-spacing-1 text-muted">
+                        <tr>
+                            <th class="py-3 ps-4">Product</th>
+                            <th class="py-3">Price</th>
+                            <th class="py-3">Quantity</th>
+                            <th class="py-3">Total</th>
+                            <th class="py-3 pe-4 text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-top-0">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="ps-4">
+                                <span class="fw-bold text-dark">@item.ProductName</span>
+                            </td>
+                            <td class="text-muted">@item.Price.ToString("C")</td>
+                            <td>
+                                <form asp-action="UpdateQuantity" method="post" class="d-flex align-items-center" style="max-width: 120px;">
+                                    <input type="hidden" name="productId" value="@item.ProductId" />
+                                    <input type="number" name="quantity" value="@item.Quantity" min="1" max="100" class="form-control form-control-sm text-center fw-bold border-0 bg-light" onchange="this.form.submit()" />
+                                </form>
+                            </td>
+                            <td class="fw-bold text-primary">@((item.Price * item.Quantity).ToString("C"))</td>
+                            <td class="text-end pe-4">
+                                <form asp-action="Remove" method="post">
+                                    <input type="hidden" name="productId" value="@item.ProductId" />
+                                    <button type="submit" class="btn btn-link text-danger p-0" data-bs-toggle="tooltip" title="Remove">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot class="bg-light">
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold py-4">Total Amount:</td>
+                        <td class="fw-bold text-primary h4 py-4 mb-0">@Model.Sum(i => i.Price * i.Quantity).ToString("C")</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+        <div class="mt-4 text-end">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary me-2">Continue Shopping</a>
+            <a asp-controller="Order" asp-action="Index" class="btn btn-success btn-lg px-5">Checkout</a>
+        </div>
+    }
+</div>

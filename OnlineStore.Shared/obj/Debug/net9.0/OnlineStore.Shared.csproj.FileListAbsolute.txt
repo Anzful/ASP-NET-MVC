@@ -1,0 +1,11 @@
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\bin\Debug\net9.0\OnlineStore.Shared.deps.json
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\bin\Debug\net9.0\OnlineStore.Shared.dll
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\bin\Debug\net9.0\OnlineStore.Shared.pdb
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.AssemblyInfoInputs.cache
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.AssemblyInfo.cs
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.csproj.CoreCompileInputs.cache
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.dll
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\refint\OnlineStore.Shared.dll
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.pdb
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\ref\OnlineStore.Shared.dll

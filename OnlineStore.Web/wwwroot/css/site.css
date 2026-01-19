@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #6c757d;
+  --accent-color: #0d6efd;
+  --background-color: #f8f9fa;
+  --input-bg: #ececec;
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family-base);
+  color: #212529;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar Glassmorphism */
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Cards & Interactiosn */
+.card {
+  border: none;
+  border-radius: 16px;
+  background: white;
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-img-top {
+  border-radius: 16px 16px 0 0;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Typography & Buttons */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+  transform: translateY(-1px);
+}
+
+/* Form Inputs */
+.form-control {
+  background-color: var(--input-bg);
+  border: 1px solid transparent;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  background-color: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section Utilities */
+.hero-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 5rem 0;
+  border-radius: 24px;
+  margin-bottom: 4rem;
+}
