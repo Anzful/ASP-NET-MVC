@@ -9,3 +9,4 @@ E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.d
 E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\refint\OnlineStore.Shared.dll
 E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.pdb
 E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\ref\OnlineStore.Shared.dll
+E:\Projects\ASP-NET-MVC\OnlineStore.Shared\obj\Debug\net9.0\OnlineStore.Shared.sourcelink.json

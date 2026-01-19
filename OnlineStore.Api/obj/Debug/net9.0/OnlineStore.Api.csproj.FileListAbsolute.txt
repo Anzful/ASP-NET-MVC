@@ -140,3 +140,4 @@ E:\Projects\ASP-NET-MVC\OnlineStore.Api\obj\Debug\net9.0\refint\OnlineStore.Api.
 E:\Projects\ASP-NET-MVC\OnlineStore.Api\obj\Debug\net9.0\OnlineStore.Api.pdb
 E:\Projects\ASP-NET-MVC\OnlineStore.Api\obj\Debug\net9.0\OnlineStore.Api.genruntimeconfig.cache
 E:\Projects\ASP-NET-MVC\OnlineStore.Api\obj\Debug\net9.0\ref\OnlineStore.Api.dll
+E:\Projects\ASP-NET-MVC\OnlineStore.Api\obj\Debug\net9.0\OnlineStore.Api.sourcelink.json

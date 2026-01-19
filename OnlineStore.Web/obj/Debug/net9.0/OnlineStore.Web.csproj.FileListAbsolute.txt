@@ -93,4 +93,5 @@ E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\refint\OnlineStore.Web.
 E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\OnlineStore.Web.pdb
 E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\OnlineStore.Web.genruntimeconfig.cache
 E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\ref\OnlineStore.Web.dll
-E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\compressed\ntlyarfbe4-9wj27zv2cw.gz
+E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\OnlineStore.Web.sourcelink.json
+E:\Projects\ASP-NET-MVC\OnlineStore.Web\obj\Debug\net9.0\compressed\ntlyarfbe4-499wvdzeku.gz

@@ -12,6 +12,13 @@ body {
   font-family: var(--font-family-base);
   color: #212529;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 /* Navbar Glassmorphism */

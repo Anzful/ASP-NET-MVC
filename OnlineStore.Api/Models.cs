@@ -53,7 +53,11 @@ public class AppDbContext : DbContext
             new Product { Id = 9, Name = "Nintendo Switch OLED", Price = 349.99m, Description = "7-inch OLED screen, wide adjustable stand, and enhanced audio.", ImageUrl = "https://images.unsplash.com/photo-1679930726265-4d57c31e975a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
             new Product { Id = 10, Name = "GoPro HERO12 Black", Price = 399.99m, Description = "Incredible image quality, even better HyperSmooth video stabilization.", ImageUrl = "https://images.unsplash.com/photo-1564466021183-53bc32313620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
             new Product { Id = 11, Name = "Kindle Paperwhite", Price = 139.99m, Description = "Now with a 6.8” display and adjustable warm light.", ImageUrl = "https://images.unsplash.com/photo-1544252654-c9f5ab3747d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-            new Product { Id = 12, Name = "Dyson V15 Detect", Price = 749.99m, Description = "Reveals microscopic dust. Most powerful, intelligent cordless vacuum.", ImageUrl = "https://images.unsplash.com/photo-1652870191834-8c832813c9c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+            new Product { Id = 12, Name = "Dyson V15 Detect", Price = 749.99m, Description = "Reveals microscopic dust. Most powerful, intelligent cordless vacuum.", ImageUrl = "https://images.unsplash.com/photo-1652870191834-8c832813c9c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+            new Product { Id = 13, Name = "PlayStation 5", Price = 499.99m, Description = "Experience lightning fast loading with an ultra-high speed SSD.", ImageUrl = "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+            new Product { Id = 14, Name = "Fujifilm X100V", Price = 1399.00m, Description = "Premium compact digital camera with a fixed 23mm F2 lens.", ImageUrl = "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+            new Product { Id = 15, Name = "Sonos Era 300", Price = 449.00m, Description = "Next-level audio that hits from every direction.", ImageUrl = "https://images.unsplash.com/photo-1545454641-03035df963c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+            new Product { Id = 16, Name = "Herman Miller Aeron", Price = 1695.00m, Description = "The benchmark for ergonomic seating.", ImageUrl = "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
         );
     }
 }
